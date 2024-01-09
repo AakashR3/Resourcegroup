@@ -1,3 +1,8 @@
+resource "random_string" "unique_id" {
+  length  = 6
+  special = false
+}
+
 # Service Principal Variables
 
 variable "client_id" {
