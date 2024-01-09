@@ -1,6 +1,5 @@
 variable "unique_id" {
   type    = string
-  default = "default"
 }
 
 # Service Principal Variables
