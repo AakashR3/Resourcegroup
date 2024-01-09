@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "test" {
-  name     = "terraform-tf-${random_string.unique_id.result}"
+  name     = "terraform-rg-${var.unique_id}"
   location = "Central US"
 
   tags = {
