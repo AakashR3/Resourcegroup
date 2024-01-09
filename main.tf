@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "test" {
-  name     = "testing-tf"
+  name     = "terraform-tf"
   location = "Central US"
 
   tags = {
