@@ -5,8 +5,4 @@ terraform {
     container_name         = "tfstate"
     key                    = "tfstate/${unique_id}/terraform.tfstate"
   }
-  
-  required_version = ">= 0.14"
 }
-
-variable "unique_id" {}
