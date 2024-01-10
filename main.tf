@@ -1,4 +1,3 @@
-resource "azurerm_resource_group" "test" {
 terraform {
   backend "azurerm" {
     resource_group_name   = "Aakash-Rg"
