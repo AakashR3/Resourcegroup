@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "test" {
   }
 }
 data "azurerm_directory_object" "user" {
-  user_principal_name = "your-user-principal-name"  # Replace with the actual user principal name
+  user_principal_name = var.client_id  # Replace with the actual user principal name
 }
 
 resource "azurerm_role_assignment" "contributor_assignment" {
