@@ -6,6 +6,9 @@ resource "azurerm_resource_group" "test" {
     Region = "Central India"
   }
 }
+data "azurerm_directory_object" "user" {
+  user_principal_name = "your-user-principal-name"  # Replace with the actual user principal name
+}
 
 resource "azurerm_role_assignment" "contributor_assignment" {
   scope                = azurerm_resource_group.test.id
