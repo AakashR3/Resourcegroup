@@ -1,3 +1,10 @@
+variable "resource_group_name" {
+  type    = string
+}
+variable "user_email" {
+  type = string
+  # Add the email address of the user for whom you want to assign the role
+}
 variable "unique_id" {
   type    = string
   default = "default_value"
