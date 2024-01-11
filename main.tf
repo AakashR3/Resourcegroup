@@ -10,5 +10,5 @@ resource "azurerm_resource_group" "test" {
 resource "azurerm_role_assignment" "contributor_assignment" {
   #scope                = azurerm_resource_group.test.id
   role_definition_name = "Contributor"
-  principal_id         = data.azurerm_directory_object.user.id
+  #principal_id         = data.azurerm_directory_object.user.id
 }
