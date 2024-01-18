@@ -1,5 +1,6 @@
 variable "resource_group_name" {
   type    = string
+  defaut = "tf-test"
 }
 variable "user_email" {
   type = string
