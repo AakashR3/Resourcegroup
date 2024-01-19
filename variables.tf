@@ -1,4 +1,4 @@
-variable "resource_group_name" {
+variable "Resource_group_name" {
   type    = string
 }
 # Service Principal Variables
