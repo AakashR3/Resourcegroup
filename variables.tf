@@ -1,6 +1,8 @@
 variable "Resource_group_name" {
   type    = string
+  default = "test"
 }
+
 # Service Principal Variables
 
 variable "client_id" {
