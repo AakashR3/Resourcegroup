@@ -7,7 +7,7 @@ resource "azurerm_resource_group" "test" {
   }
 }
 resource "azurerm_role_assignment" "contributor" {
-  principal_id         = var._id
+  principal_id         = var.client_id
   role_definition_name = "Contributor"
   scope                = azurerm_resource_group.test.id
 }
