@@ -6,4 +6,8 @@ resource "azurerm_resource_group" "test" {
     Region = "Central India"
   }
 }
-
+resource "azurerm_role_assignment" "contributor" {
+  principal_id         = var._id
+  role_definition_name = "Contributor"
+  scope                = azurerm_resource_group.test.id
+}
