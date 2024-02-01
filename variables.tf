@@ -25,3 +25,8 @@ variable "tenant_id" {
     description =   "Tenant ID"
     type        =   string
 }
+variable "object_id" {
+  description = "Object ID of the Azure AD user, service principal, or application"
+  type        = string
+}
+
