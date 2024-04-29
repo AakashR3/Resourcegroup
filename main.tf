@@ -6,4 +6,8 @@ resource "azurerm_resource_group" "test" {
     Region = "Central India"
   }
 }
-
+resource "azurerm_role_assignment" "owner" {
+  scope                = azurerm_resource_group.test.id
+  role_definition_name = "Owner"
+  principal_id         = "<principal_id_of_the_user>"
+}
