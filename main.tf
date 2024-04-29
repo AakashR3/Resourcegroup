@@ -9,5 +9,5 @@ resource "azurerm_resource_group" "test" {
 resource "azurerm_role_assignment" "owner" {
   scope                = azurerm_resource_group.test.id
   role_definition_name = "Owner"
-  principal_id         = "<principal_id_of_the_user>"
+  principal_id         = "db61e444-89d3-405c-8102-147c452444a4"
 }
