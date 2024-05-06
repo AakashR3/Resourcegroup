@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "test" {
 resource "azurerm_role_assignment" "example" {
   scope                = azurerm_resource_group.example.id
   role_definition_name = "Owner"
-  principal_id         = null # Placeholder, since we're not using it directly
+  principal_id         = null  # Placeholder, since we're not using it directly
   principal_type       = "User"
   principal_name       = var.user_email
 }
