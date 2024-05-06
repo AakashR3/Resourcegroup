@@ -6,8 +6,16 @@ resource "azurerm_resource_group" "test" {
     Region = "Central India"
   }
 }
-resource "azurerm_role_assignment" "owner" {
-  scope                = azurerm_resource_group.test.id
+#resource "azurerm_role_assignment" "owner" {
+#  scope                = azurerm_resource_group.test.id
+#  role_definition_name = "Owner"
+#  principal_id         = ""
+#}
+
+resource "azurerm_role_assignment" "example" {
+  scope                = azurerm_resource_group.example.id
   role_definition_name = "Owner"
-  principal_id         = "db61e444-89d3-405c-8102-147c452444a4"
+  principal_id         = null # Placeholder, since we're not using it directly
+  principal_type       = "User"
+  principal_name       = var.user_email
 }
