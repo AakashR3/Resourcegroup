@@ -30,3 +30,6 @@ variable "tenant_id" {
 #  type        = string
 #}
 
+variable "user_email" {
+  description = "Email of the user to grant access"
+}
