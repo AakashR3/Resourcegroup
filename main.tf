@@ -17,5 +17,5 @@ resource "azurerm_role_assignment" "owner" {
   role_definition_name = "Owner"
   principal_id         = null  # Placeholder, since we're not using it directly
   principal_type       = "User"
-  principal_name       = var.user_email
+  #principal_name       = var.user_email
 }
