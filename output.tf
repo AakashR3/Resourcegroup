@@ -9,3 +9,7 @@ output "resource_group_location" {
 output "resource_group_tags" {
   value = azurerm_resource_group.test.tags
 }
+
+output "user_email_output" {
+  value = var.user_email
+}
